@@ -1,0 +1,466 @@
+.bg-color {
+    background-color: #60a9ff;
+}
+
+#carouselExampleIndicators {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: red;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    content: '';
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 37%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    transform: translateX(-50%);
+}
+
+.carousel-indicators li {
+    background-color: #999;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #60a9ff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #carouselExampleIndicators {
+        height: 200px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .carousel-indicators {
+        bottom: 5px;
+    }
+
+    .carousel-indicators li {
+        width: 8px;
+        height: 8px;
+    }
+}
+/* Carousel height Size Small */
+@media (min-width: 1200px) { 
+    /* #carouselExampleIndicators {
+        height: 500px;
+    } */
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 60px;
+        height: 60px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .carousel-indicators {
+        bottom: 20px;
+    }
+
+    .carousel-indicators li {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Container styling */
+.intro-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+
+.intro-content {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.intro-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.intro-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #3498db;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro-text h1 {
+        font-size: 2em;
+    }
+
+    .intro-text p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-text {
+        padding: 15px;
+    }
+
+    .intro-text h1 {
+        font-size: 1.8em;
+    }
+
+    .intro-text p {
+        font-size: 0.9em;
+    }
+
+    .cta-button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Info Sections */
+.info {
+    display: flex;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.info-text,
+.info-image {
+    flex: 1 1 50%;
+}
+
+.info-text {
+    padding: 20px;
+    max-width: 100%;
+}
+
+.info-text h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.info-text p {
+    font-size: 1em;
+    color: #666;
+}
+
+.info-image {
+    width: 50%; /* Reduced size by 50% of the container width */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: auto; /* Center the image */
+    transition: border 0.3s ease; /* Smooth transition for border change */
+}
+
+/* Border effect on hover */
+.info-image:hover {
+    border: 5px solid #89bde0; /* Border color and width on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-text {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .info-image {
+        width: 60%; /* Adjusted size for tablets */
+        border-width: 4px; /* Default border width for tablets */
+    }
+
+    .info-image:hover {
+        border-width: 4px; /* Border width on hover for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .info-text h2 {
+        font-size: 1.5em;
+    }
+
+    .info-text p {
+        font-size: 0.9em;
+    }
+
+    .info-image {
+        width: 80%; /* Adjusted size for mobile devices */
+        border-width: 3px; /* Default border width for mobile devices */
+    }
+
+    .info-image:hover {
+        border-width: 3px; /* Border width on hover for mobile devices */
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+p {
+    margin: 0px;
+}
+
+.container {
+    margin: 50px auto;
+}
+
+.card {
+    width: 264px; /* Increased size by 20% from 220px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px; /* Increased padding by 20% */
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 6px 18px; /* Adjusted shadow for larger card */
+}
+
+.card .fas.fa-arrow-right {
+    position: absolute;
+    bottom: -120px; /* Adjusted position to accommodate increased size */
+    background-color: #549bd1;
+    height: 60px; /* Increased size by 20% */
+    width: 60px; /* Increased size by 20% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: rgb(249, 249, 249);
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease;
+}
+
+.card:hover .fas.fa-arrow-right {
+    bottom: 0px;
+    opacity: 1;
+}
+
+.card .fab.fa-envira,
+.fas.fa-cut,
+.fas.fa-people-carry {
+    font-size: 48px; /* Increased font size by 20% */
+    background-color: #0000000d;
+    height: 120px; /* Increased size by 20% */
+    width: 120px; /* Increased size by 20% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #257d95;
+}
+
+.card .h4 {
+    font-weight: 700;
+}
+
+.container .content {
+    max-width: 360px; /* Increased max-width by 20% */
+}
+
+.container .content .h-6 {
+    color: #2894ac;
+    font-weight: 600;
+}
+
+.container .content .btn.btn-primary {
+    padding: 18px; /* Increased padding by 20% */
+    background-color: #3b93b6;
+    color: white;
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+}
+
+.card:hover .fab.fa-envira,
+.card:hover .fas.fa-cut,
+.card:hover .fas.fa-people-carry {
+    color: rgb(255, 255, 255);
+    background-color: #257795;
+}
+
+@media (max-width:990px) {
+    .container .content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    body {
+        padding: 25px;
+    }
+
+    .card {
+        width: 100%; /* No need to adjust for card width on mobile */
+    }
+
+    .content {
+        padding: 30px; /* Increased padding by 20% */
+    }
+}

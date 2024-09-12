@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2f5982;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://www.mattsheeks.com/wp-content/uploads/2019/04/Featurred-Image-option.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #cccccc;
+    text-align: center;
+    padding: 4em 1em;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 1em 0 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(14, 155, 210, 0.1);
+    margin: 1em;
+    padding: 1em;
+    width: calc(33% - 2em);
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+    margin-top: 0.5em;
+    font-weight: 700;
+    color: #60a9ff;
+}
+
+.card p {
+    color: #666;
+    font-weight: 400;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #cccccc;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.footer p {
+    margin: 0;
+}

@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+.breadcrumb-item.active{
+    color: #eee9db;
+}
+a {
+color: #f7e2a9;    text-decoration: underline;
+}
